@@ -1,0 +1,390 @@
+@charset "utf-8";
+
+/* webfont */
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+div,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+span,
+strong,
+table,
+th,
+td,
+em,
+form.input,
+textarea,
+img,
+video {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 20px;
+    /* 1rem */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    background-color: #19193C;
+    font-family: Pretendard-Regular;
+    font-size: 20px;
+    line-height: 25px;
+    color: rgb(255, 255, 255);
+}
+
+a {
+    text-decoration: none;
+}
+
+ol,
+ul {
+    list-style: none;
+    color: inherit;
+}
+
+#wrap {
+    min-width: 1400px;
+}
+
+/* bg */
+.bg {
+    height: 4305px;
+    background: url(../images/about/bg.png) no-repeat center;
+}
+
+/* main_bg */
+.main_bg {
+    height: 1050px;
+    background: url(../images/about/main_bg.png) no-repeat center;
+}
+
+/* lang */
+.lang_wrap {
+    width: 1320px;
+    margin: 0 auto;
+    height: 50px;
+}
+
+.lang {
+    display: flex;
+    justify-content: right;
+    padding-right: 20px;
+}
+
+.lang>li>a {
+    display: block;
+    margin: 10px 10px;
+    color: #84386E;
+}
+
+/* top */
+.top {
+    width: 1320px;
+    margin: 0 auto;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+
+.gnb {
+    display: flex;
+}
+
+.gnb li a {
+    display: block;
+    margin: 10px 15px 0 15px;
+    padding-bottom: 20px;
+}
+
+.gnb li a:hover {
+    border-bottom: 5px solid white;
+}
+
+#main_banner {
+    text-align: center;
+    height: 350px;
+    box-sizing: border-box;
+    padding-top: 150px;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.171);
+}
+
+#about_gnb_wrap {
+    width: 1320px;
+    margin: 0 auto;
+    height: 188px;
+    box-sizing: border-box;
+    padding-top: 60px;
+}
+
+.about_gnb {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 300px;
+}
+
+.about_gnb li a {
+    display: block;
+    padding: 10px 20px;
+}
+
+.about_gnb li a:hover {
+    border-bottom: 5px solid rgb(252, 108, 56);
+}
+
+/* section1 */
+#section1 {
+    position: relative;
+    width: 1320px;
+    margin: 0 auto;
+}
+
+.space_man {
+    position: absolute;
+    top: 30px;
+    left: -100px;
+    z-index: 9;
+    animation: space_man 4s infinite;
+}
+
+@keyframes space_man {
+    0% {
+        top: 0;
+        left: 0;
+    }
+
+    25% {
+        top: 30px;
+        left: -15px;
+    }
+
+    50% {
+        top: -30px;
+        left: -30px;
+    }
+
+    75% {
+        top: -10px;
+        left: -20px;
+    }
+
+    100% {
+        top: 0;
+        left: 0;
+    }
+}
+
+
+.spaceazit_title {
+    height: 203px;
+}
+
+.spaceazit_contents {
+    height: 451px;
+    background-color: rgb(252, 108, 56);
+}
+
+.spaceazit_contents_inner {
+    margin: 0 auto;
+    width: 1320px;
+    box-sizing: border-box;
+}
+
+.spaceazit_contents_text {
+    padding: 60px 0 0 670px;
+}
+
+.spaceazit_contents_text img {
+    padding-bottom: 30px;
+}
+
+/* section2 */
+#section2 {
+    height: 1100px;
+    background-color: white;
+    color: #424242;
+}
+
+.section2_inner {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+.section2_inner h3 {
+    padding: 50px 0 20px;
+}
+
+.ci_box {
+    height: 616px;
+    box-sizing: border-box;
+    padding-top: 70px;
+}
+
+.ci_img {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 300px 0 0;
+}
+
+.ci_img p {
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+.color_system {
+    height: 484px;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+.color_system p {
+    padding: 30px 0 30px 0;
+}
+
+.color_system_img {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 150px 0 0;
+    font-weight: bold;
+}
+
+.orange {
+    color: rgb(252, 108, 56);
+}
+
+/* section3 */
+#section3 {
+    height: 1134px;
+    box-sizing: border-box;
+}
+
+.contact_us_box {
+    height: 364px;
+    width: 1320px;
+    margin: 0 auto;
+}
+
+.contact_us_box img {
+    padding: 150px 0 50px 0;
+}
+
+.contact_us {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.contact_us li:nth-child(1) {
+    padding-right: 100px;
+    background: url(../images/about/about_icon1.png) no-repeat top 0 left 0;
+    padding-left: 25px;
+}
+
+.contact_us li:nth-child(2) {
+    background: url(../images/about/about_icon2.png) no-repeat top 0 left 0;
+    padding-left: 25px;
+}
+
+.contact_us li:nth-child(3) {
+    padding-right: 250px;
+    background: url(../images/about/about_icon3.png) no-repeat top 0 left 0;
+    padding-left: 25px;
+}
+
+.contact_us li:nth-child(4) {
+    background: url(../images/about/about_icon4.png) no-repeat top 0 left 0;
+    padding-left: 25px;
+}
+
+
+/* bottom */
+.bootom_moon {
+    height: 729px;
+    background: url(../images/main/footer_moon.png) no-repeat top 200px center;
+    box-sizing: border-box;
+}
+
+.bootom_blank {
+    height: 309px;
+}
+
+#bottom {
+    color: #bdbdbd;
+    height: 420px;
+    background-color: rgba(0, 0, 0, 0.534);
+
+}
+
+.bottom_inner {
+    width: 1320px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 130px;
+    font-size: 16px;
+}
+
+.footer_logo p {
+    padding-top: 30px;
+}
+
+.footer_contents1_ul li a {
+    display: block;
+    color: #bdbdbd;
+}
+
+.footer_contents1_ul li a:hover {
+    color: white;
+}
+
+.sns .sns_link {
+    display: flex;
+}
+
+.sns .sns_link li a {
+    display: block;
+    padding: 10px 10px;
+    opacity: 0.4;
+}
+
+.sns .sns_link li a:hover {
+    opacity: 1;
+}
+
+.information li {
+    padding-left: 20px;
+}
+
+.information li:nth-child(1) {
+    background: url(../images/main/information1.png) no-repeat top 0 left 0;
+}
+
+.information li:nth-child(2) {
+    background: url(../images/main/information2.png) no-repeat top 0 left 0;
+}
+
+.information li:nth-child(3) {
+    background: url(../images/main/information3.png) no-repeat top 0 left 0;
+}
+
+.information li:nth-child(4) {
+    background: url(../images/main/information4.png) no-repeat top 0 left 0;
+}
